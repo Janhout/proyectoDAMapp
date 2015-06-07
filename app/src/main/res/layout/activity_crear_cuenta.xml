@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/dialogo_progreso"
+            layout="@layout/progreso"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/titulo"
+                    android:text="@string/crear_cuenta_nuevo" />
+
+                <include layout="@layout/linea_separadora_titulo" />
+
+                <EditText
+                    android:id="@+id/crear_etEmpresa"
+                    style="@style/editTextLogin"
+                    android:hint="@string/crear_cuenta_empresa"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/crear_etNif" />
+
+                <EditText
+                    android:id="@+id/crear_etNif"
+                    style="@style/editTextLogin"
+                    android:hint="@string/crear_cuenta_nif"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/crear_etEmail" />
+
+                <EditText
+                    android:id="@+id/crear_etEmail"
+                    style="@style/editTextLogin"
+                    android:hint="@string/crear_cuenta_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:nextFocusForward="@+id/crear_etUsuario"
+                    android:layout_marginBottom="@dimen/margen_entre_filas"/>
+
+                <TextView
+                    style="@style/titulo"
+                    android:text="@string/crear_cuenta_acceso" />
+
+                <include layout="@layout/linea_separadora_titulo" />
+
+                <EditText
+                    android:id="@+id/crear_etUsuario"
+                    style="@style/editTextLogin"
+                    android:hint="@string/crear_cuenta_usuario"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/crear_etPass" />
+
+                <EditText
+                    android:id="@+id/crear_etPass"
+                    style="@style/editTextLogin"
+                    android:background="@drawable/estilos_edittext_personalizado"
+                    android:hint="@string/pass"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPassword"
+                    android:nextFocusForward="@+id/crear_etRepetirPass" />
+
+                <EditText
+                    android:id="@+id/crear_etRepetirPass"
+                    style="@style/editTextLogin"
+                    android:background="@drawable/estilos_edittext_personalizado"
+                    android:hint="@string/crear_cuenta_conf_pass"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btCrearCuenta"
+                    style="@style/botonPersonalizado"
+                    android:onClick="creaCuenta"
+                    android:text="@string/crear_cuenta_crear" />
+
+                <Button
+                    android:id="@+id/btVolverInicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_recordar"
+                    android:onClick="volverInicio"
+                    android:text="@string/volver_inicio"
+                    android:textColor="@color/mi_material_primary"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

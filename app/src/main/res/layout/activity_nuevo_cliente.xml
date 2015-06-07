@@ -1,0 +1,224 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/dialogo_progreso"
+            layout="@layout/progreso"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <TextView
+                    style="@style/titulo"
+                    android:text="@string/s_nuevoCliente_titulo_datos" />
+
+                <include layout="@layout/linea_separadora_titulo" />
+
+                <EditText
+                    android:id="@+id/nuevoCliente_inputNombreComercial"
+                    style="@style/editTextPersonalizado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:maxLength="60"
+                    android:nextFocusForward="@+id/nuevoCliente_NIF"
+                    android:hint="@string/s_nuevoCliente_nombreComercial" />
+
+                <EditText
+                    android:id="@+id/nuevoCliente_NIF"
+                    style="@style/editTextPersonalizado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/nuevoCliente_provincia"
+                    android:hint="@string/s_nuevoCliente_nif"
+                    android:maxLength="9"
+                    android:layout_marginBottom="@dimen/margen_entre_filas"/>
+
+                <TextView
+                    style="@style/titulo"
+                    android:text="@string/s_nuevoCliente_titulo_direccion" />
+
+                <include layout="@layout/linea_separadora_titulo" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/m_nuevoCliente_editText"
+                    android:layout_marginStart="@dimen/m_nuevoCliente_editText"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/s_nuevoCliente_label_provincia" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/nuevoCliente_provincia"
+                        style="@style/editTextPersonalizado"
+                        android:layout_width="0dp"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/nuevoCliente_localidad"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m_nuevoCliente_editText"
+                    android:layout_marginLeft="@dimen/m_nuevoCliente_editText"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/s_nuevoCliente_label_localidad" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/nuevoCliente_localidad"
+                        style="@style/editTextPersonalizado"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/nuevoCliente_tipoDireccion"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/m_nuevoCliente_editText"
+                    android:layout_marginLeft="@dimen/m_nuevoCliente_editText"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:text="@string/s_nuevoCliente_label_tipoDireccion" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/nuevoCliente_tipoDireccion"
+                        style="@style/editTextPersonalizado"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/nuevoCliente_direccion"/>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/nuevoCliente_direccion"
+                    style="@style/editTextPersonalizado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/s_nuevoCliente_direccion"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/nuevoCliente_numero"
+                    android:maxLength="40"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margen_entre_filas">
+
+                    <EditText
+                        android:id="@+id/nuevoCliente_numero"
+                        style="@style/editTextPersonalizado"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/s_nuevoCliente_numero"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/nuevoCliente_piso"
+                        android:maxLength="15"/>
+
+                    <EditText
+                        android:id="@+id/nuevoCliente_piso"
+                        style="@style/editTextPersonalizado"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/s_nuevoCliente_piso"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/nuevoCliente_codigo_postal"
+                        android:maxLength="10"/>
+
+                    <EditText
+                        android:id="@+id/nuevoCliente_codigo_postal"
+                        style="@style/editTextPersonalizado"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/s_nuevoCliente_codigo_postal"
+                        android:imeOptions="actionNext"
+                        android:nextFocusForward="@+id/nuevoCliente_email"
+                        android:maxLength="5"/>
+                </LinearLayout>
+
+                <TextView
+                    style="@style/titulo"
+                    android:text="@string/s_nuevoCliente_titulo_contacto" />
+
+                <include layout="@layout/linea_separadora_titulo" />
+
+                <EditText
+                    android:id="@+id/nuevoCliente_email"
+                    style="@style/editTextPersonalizado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/s_nuevoCliente_email"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/nuevoCliente_telefono1"
+                    android:maxLength="40"/>
+
+                <EditText
+                    android:id="@+id/nuevoCliente_telefono1"
+                    style="@style/editTextPersonalizado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/s_nuevoCliente_telefono1"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/nuevoCliente_telefono2"
+                    android:maxLength="15"/>
+
+                <EditText
+                    android:id="@+id/nuevoCliente_telefono2"
+                    style="@style/editTextPersonalizado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/s_nuevoCliente_telefono2"
+                    android:inputType="phone"
+                    android:maxLength="15"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>
