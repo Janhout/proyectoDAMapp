@@ -5,10 +5,10 @@ public class Constantes {
     private Constantes() {
     }
 
-    //private final static String PROTOCOLO = "https://";
-    //private final static String URL_BASE = "proyectodam-rafaelgomez.rhcloud.com/";
-    private final static String PROTOCOLO = "http://";
-    private final static String URL_BASE = "192.168.1.105/servidor/";
+    private final static String PROTOCOLO = "https://";
+    private final static String URL_BASE = "proyectodam-rafaelgomez.rhcloud.com/";
+    //private final static String PROTOCOLO = "http://";
+    //private final static String URL_BASE = "192.168.1.105/servidor/";
 
     private final static String MI_URL = PROTOCOLO + URL_BASE;
 
