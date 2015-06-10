@@ -1,0 +1,156 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/titulo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="@string/mostrarCliente_informacion_cliente"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_favorito"
+                android:focusable="false"
+                android:textSize="@dimen/size_icono_boton_favorito"
+                android:background="@android:color/transparent"
+                android:textColor="@color/icono_favoritos"/>
+        </LinearLayout>
+
+        <include
+            layout="@layout/linea_separadora_titulo"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margen_final_tabla"
+            android:shrinkColumns="1"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="@dimen/margen_entre_filas"
+                android:layout_marginTop="@dimen/margen_entre_filas">
+
+                <TextView
+                    style="@style/texto_columna_propiedades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_mostrarCliente_nombre_comercial" />
+
+                <TextView
+                    android:id="@+id/mostrarCliente_nombrecomercial"
+                    style="@style/texto_columna_valores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                style="@style/fila_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    style="@style/texto_columna_propiedades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_mostrarCliente_nif" />
+
+                <TextView
+                    android:id="@+id/mostrarCliente_nif"
+                    style="@style/texto_columna_valores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                style="@style/fila_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/texto_columna_propiedades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_mostrarCliente_telefonos" />
+
+                <TextView
+                    android:id="@+id/mostrarCliente_telefonos"
+                    style="@style/texto_columna_valores"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                style="@style/fila_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    style="@style/texto_columna_propiedades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_mostrarCliente_direccion" />
+
+                <TextView
+                    android:id="@+id/mostrarCliente_direccion"
+                    style="@style/texto_columna_valores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                style="@style/fila_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    style="@style/texto_columna_propiedades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_mostrarCliente_email"
+                    />
+
+                <TextView
+                    android:id="@+id/mostrarCliente_email"
+                    style="@style/texto_columna_valores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                style="@style/fila_normal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <TextView
+                    style="@style/texto_columna_propiedades"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/s_mostrarCliente_cuenta" />
+
+                <TextView
+                    android:id="@+id/mostrarCliente_numeroCuenta"
+                    style="@style/texto_columna_valores"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

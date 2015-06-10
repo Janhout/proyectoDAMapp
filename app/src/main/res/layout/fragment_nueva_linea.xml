@@ -1,0 +1,125 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/titulo"
+                android:text="@string/nueva_factura_producto" />
+
+            <include layout="@layout/linea_separadora_titulo" />
+
+            <EditText
+                android:id="@+id/nueva_factura_et_producto"
+                style="@style/editTextPersonalizado"
+                android:focusable="false"
+                android:hint="@string/hint_pulsar_seleccionar_producto" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/nueva_factura_et_nombre_producto"
+                    style="@style/editTextPersonalizado"
+                    android:hint="@string/hint_nombre_producto"
+                    android:imeOptions="actionNext"
+                    android:nextFocusForward="@+id/nueva_factura_et_cant_producto"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/titulo"
+                android:text="@string/nueva_factura_informacion_linea" />
+
+            <include layout="@layout/linea_separadora_titulo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_cantidad_producto" />
+
+                <EditText
+                    android:id="@+id/nueva_factura_et_cantidad_producto"
+                    style="@style/editTextPersonalizado"
+                    android:hint="@string/hint_cantidad_producto"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:nextFocusForward="@+id/nueva_factura_et_precio_producto"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_precio_producto" />
+
+                <EditText
+                    android:id="@+id/nueva_factura_et_precio_producto"
+                    style="@style/editTextPersonalizado"
+                    android:hint="@string/hint_precio_producto"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:inputType="number|numberDecimal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hint_iva_producto" />
+
+                <Spinner
+                    android:id="@+id/nueva_factura_sp_iva_producto"
+                    style="@style/editTextPersonalizado"
+                    android:focusable="false"
+                    android:layout_width="0dp"
+                    android:layout_weight="3"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/titulo"
+                android:text="@string/hint_descripcion_producto"/>
+
+            <include layout="@layout/linea_separadora_titulo" />
+
+            <EditText
+                android:id="@+id/nueva_factura_et_descripcion_producto"
+                style="@style/editTextPersonalizado"
+                android:hint="@string/hint_descripcion_producto"
+                android:maxLength="60"/>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

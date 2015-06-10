@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lista_facturas_vacia">No hay facturas</string>
+    <string name="lista_clientes_vacia">No hay clientes</string>
+    <string name="lista_productos_vacia">No hay productos</string>
+    <string name="lista_clientes_favoritos_vacia">No hay clientes favoritos</string>
+    <string name="lista_gastos_vacia">No hay gastos</string>
+</resources>

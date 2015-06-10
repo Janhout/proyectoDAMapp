@@ -1,0 +1,75 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/gris_deslizar</item>
+        <item name="colorPrimaryDark">@color/mi_material_primary_dark</item>
+        <item name="colorAccent">@color/mi_material_accent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="action_bar_styles" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:background">@color/mi_material_primary</item>
+        <item name="android:textColorPrimary">@color/blanco</item>
+        <item name="android:textColorSecondary">@color/blanco</item>
+        <item name="actionMenuTextColor">@android:color/holo_orange_light</item>
+    </style>
+    <style name="titulo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/mi_material_primary</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="spinnerPersonalizado" parent="Widget.AppCompat.Spinner.DropDown">
+        <item name="android:layout_marginBottom">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:layout_marginLeft">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:layout_marginRight">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:layout_marginTop">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:background">@dimen/m_nuevoCliente_editText2</item>
+    </style>
+
+    <style name="editTextLogin">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/m_nuevoCliente_editText</item>
+        <item name="android:background">@drawable/estilos_edittext_personalizado</item>
+        <item name="android:padding">@dimen/campos_texto</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="editTextPersonalizado">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:layout_marginLeft">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:layout_marginRight">@dimen/m_nuevoCliente_editText2</item>
+        <item name="android:background">@drawable/estilos_edittext_personalizado</item>
+        <item name="android:padding">@dimen/campos_texto</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="botonPersonalizado">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/margin_bottom_login</item>
+        <item name="android:background">@drawable/boton_login</item>
+        <item name="android:textColor">@color/blanco</item>
+    </style>
+
+    <!-- ACTIVIDAD MOSTRAR CLIENTE -->
+    <style name="fila_normal">
+        <item name="android:layout_marginTop">@dimen/margen_entre_filas</item>
+        <item name="android:layout_marginBottom">@dimen/margen_entre_filas</item>
+    </style>
+
+    <style name="texto_columna_valores">
+        <item name="android:textSize">@dimen/standard_size</item>
+        <item name="android:layout_centerVertical">true</item>
+
+    </style>
+
+    <style name="texto_columna_propiedades" parent="texto_columna_valores">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">@dimen/margen_entre_filas</item>
+    </style>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="lista_acciones">
+        <item>Acciones</item>
+        <item>Ver facturas</item>
+        <item>Llamar</item>
+        <item>Enviar Email</item>
+    </string-array>
+
+    <string-array name="lista_acciones_facturas">
+        <item>Enviar al cliente</item>
+        <item>Ver PDF</item>
+    </string-array>
+
+    <string-array name="lista_titulos_navigation_drawer">
+        <item>Mis clientes</item>
+        <item>Clientes favoritos</item>
+        <item>Facturas</item>
+        <item>Mis gastos</item>
+        <item>Mis productos</item>
+        <item>Cerrar sesión</item>
+    </string-array>
+
+    <string-array name="lista_iconos_navigation_drawer">
+        <item>@string/icono_clientes</item>
+        <item>@string/icono_clientes_favoritos</item>
+        <item>@string/icono_facturas</item>
+        <item>@string/icono_compras</item>
+        <item>@string/icono_mis_productos</item>
+        <item>@string/icono_cerrar_sesion</item>
+    </string-array>
+
+    <string-array name="lista_condiciones_pago_factura">
+        <item>Definir manualmente</item>
+        <item>8 días</item>
+        <item>14 días</item>
+        <item>30 días</item>
+        <item>Caja</item>
+    </string-array>
+
+    <string-array name="lista_iva">
+        <item>21</item>
+        <item>10</item>
+        <item>4</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="opciones_linea">
+        <item>Borrar</item>
+        <item>Modificar</item>
+    </string-array>
+
+    <string-array name="nuevoGasto_concepto">
+        <item>Gasolina</item>
+        <item>Comida</item>
+    </string-array>
+
+</resources>

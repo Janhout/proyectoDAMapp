@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Proyecto DAM</string>
+    <string name="title_activity_inicial">Proyecto DAM</string>
+    <string name="title_activity_crear_cuenta">Crear Cuenta</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_principal">Inicio</string>
+    <string name="title_activity_nuevo_gasto">Nuevo Gasto</string>
+    <string name="title_activity_nuevo_cliente">Nuevo cliente</string>
+    <string name="title_activity_nueva_factura">Nueva Factura</string>
+    <string name="title_activity_nuevo_producto">Nuevo Producto</string>
+    <string name="title_activity_lista_clientes">Lista Clientes</string>
+    <string name="title_activity_lector_pdf">Lector PDF</string>
+    <string name="title_activity_mostrar_cliente">Mostrar Cliente</string>
+    <string name="title_activity_recordar_pass">Recuperar Contraseña</string>
+
+    <string name="action_nuevo_cliente">Nuevo cliente</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_nueva_factura">Nueva factura</string>
+    <string name="action_nuevo_gasto">Nuevo gasto</string>
+    <string name="action_llamar_telefono">Llamar por teléfono</string>
+    <string name="action_enviar_correo">Enviar email</string>
+    <string name="action_ver_facturas">Ver facturas</string>
+    <string name="action_guardar_factura">Guardar factura</string>
+    <string name="action_nuevo_producto">Nuevo producto</string>
+    <string name="action_guardar_producto">Guardar producto</string>
+    <string name="action_guardar_gasto">Guardar gasto</string>
+
+    <string name="action_compartir">Compartir</string>
+    <string name="action_guardar">Guardar</string>
+    <string name="action_enviar_factura_cliente">Enviar factura al cliente</string>
+
+    <string name="login">Entrar!</string>
+    <string name="usuario">Nombre de usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="recuperar_pass">Recuperar contraseña</string>
+    <string name="volver_inicio">Volver</string>
+
+    <string name="iniciar_sesion">Iniciar sesión</string>
+    <string name="crear_cuenta">Crear cuenta</string>
+
+    <string name="email">Usuario</string>
+    <string name="recuperar">Enviar!</string>
+    <string name="volver_login">Volver al login</string>
+
+    <string name="preferencias_compartidas">es.janhout.proyecto.proyectodam.preferencias_compartidas</string>
+    <string name="carpeta_facturas">facturas</string>
+
+    <string name="fichero_enviar">/factura.pdf</string>
+
+    <string name="e_guardar_factura">Error al guardar la factura</string>
+    <string name="factura_guardada">Factura guardada correctamente</string>
+
+    <string name="close_drawer">Drawer cerrado</string>
+    <string name="open_drawer">Drawer abierto</string>
+    <string name="titulo_navigation_drawer">Selecciona una opción</string>
+
+    <string name="fuente_awesome">fontawesome.ttf</string>
+
+    <string name="no_app_disponible">No hay APP disponible para realizar esa acción</string>
+    <string name="enviar_email">Selecciona APP para enviar email</string>
+
+    <string name="selecciona_telefono">Selecciona un teléfono</string>
+
+    <string name="no_hay_foto">No hay foto que mostrar</string>
+
+    <string name="confirmar_salir">Pulsa de nuevo para salir</string>
+
+    <string name="contextual_lista_borrar">Borrar</string>
+    <string name="contextual_lista_editar">Modificar</string>
+    <string name="cliente_borrado">Cliente borrado correctamente</string>
+    <string name="error_borrar_cliente">Error al borrar el cliente</string>
+
+    <string name="factura_borrada">Factura borrada correctamente</string>
+    <string name="error_borrar_factura">Error al borrar la factura</string>
+
+    <string name="producto_borrado">Producto borrado correctamente</string>
+    <string name="error_borrar_producto">Error al borrar el producto</string>
+
+</resources>

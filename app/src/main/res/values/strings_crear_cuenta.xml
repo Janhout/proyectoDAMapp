@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="crear_cuenta_conf_pass">Repetir contraseña</string>
+    <string name="crear_cuenta_crear">Crear cuenta</string>
+    <string name="crear_cuenta_email">Email</string>
+    <string name="crear_cuenta_nif">NIF</string>
+    <string name="crear_cuenta_empresa">Nombre de la empresa</string>
+    <string name="crear_cuenta_usuario">Nombre de usuario</string>
+    <string name="crear_cuenta_nuevo">Nuevo usuario</string>
+    <string name="crear_cuenta_acceso">Datos de acceso</string>
+    <string name="crear_cuenta_e_pass">Las contraseñas no coinciden</string>
+    <string name="crear_cuenta_existente">Usuario o Empresa existente</string>
+    <string name="crear_cuenta_e_insertar">Error al crear la cuenta</string>
+    <string name="crear_cuenta_alta_correcta">Cuenta creada correctamente</string>
+</resources>

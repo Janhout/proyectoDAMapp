@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="e_login">Usuario o contraseña incorrectos</string>
+    <string name="e_sesion_expirada">Su sesión ha expirado</string>
+    <string name="e_conexion">Error de conexión</string>
+    <string name="e_parametros">Error desconocido</string>
+    <string name="e_usuario">No existe ese usuario</string>
+    <string name="email_enviado">Le hemos enviado un correo con su contraseña.</string>
+</resources>

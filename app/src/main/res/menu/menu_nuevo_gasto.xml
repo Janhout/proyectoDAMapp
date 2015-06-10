@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="es.janhout.proyecto.actividades.NuevoGasto">
+
+    <item
+        android:id="@+id/action_nueva_foto"
+        android:title="@string/s_nuevoGasto_action_foto"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_photo"/>
+
+    <item
+        android:id="@+id/action_nuevo_gasto"
+        android:title="@string/action_guardar_gasto"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_action_accept"/>
+</menu>

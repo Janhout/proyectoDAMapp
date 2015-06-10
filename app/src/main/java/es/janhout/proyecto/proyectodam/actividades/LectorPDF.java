@@ -141,6 +141,7 @@ public class LectorPDF extends AppCompatActivity implements OnPageChangeListener
             }
             in.close();
             out.close();
+            Metodos.tostada(this, getString(R.string.factura_guardada));
         } catch (Exception e) {
             Metodos.tostada(this, getString(R.string.e_guardar_factura));
         }
@@ -151,6 +152,6 @@ public class LectorPDF extends AppCompatActivity implements OnPageChangeListener
         String f = fichero.substring(fichero.lastIndexOf("/")+1, fichero.lastIndexOf("."));
         File to = new File(getExternalFilesDir(getString(R.string.carpeta_facturas)) + "/" + f + ".pdf");
         copy(from, to);
-        borrarFicheroTmp();
+        //borrarFicheroTmp();
     }
 }

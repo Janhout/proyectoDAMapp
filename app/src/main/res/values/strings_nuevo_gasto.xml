@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="s_nuevoGasto_insertar">Añadir gasto</string>
+    <string name="s_nuevoGasto_concepto">Concepto</string>
+    <string name="s_nuevoGasto_detalles">Detalles</string>
+    <string name="s_nuevoGasto_importe">Importe</string>
+    <string name="s_nuevoGasto_action_foto">Tomar foto</string>
+    <string name="s_nuevoGasto_header">Gasto</string>
+    <string name="s_nuevoGasto_foto">Foto</string>
+    <string name="s_nuevoGasto_error_insertar">Error al subir el gasto</string>
+    <string name="s_nuevoGasto_error_insertar_foto">Error al subir la foto, gasto borrado</string>
+    <string name="s_nuevoGasto_insertado">Gasto subido</string>
+</resources>
